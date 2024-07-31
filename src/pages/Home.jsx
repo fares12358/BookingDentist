@@ -48,7 +48,7 @@ const Home = () => {
         </div>
       </section>
       <section className="booking container mx-auto  max-w-7xl py-10 mt-5 md:mt-20">
-        <h1 className="text-center md:text-3xl text-xl text-cyan-500 font-bold uppercase md:my-20 my-5 ">
+        <h1 className="text-center sm:text-4xl first-letter: md:text-5xl text-xl text-cyan-500 font-bold uppercase md:my-20 my-5 ">
           Get Your Appointment
         </h1>
         <div className="grid md:grid-cols-2 grid-cols-1 ">

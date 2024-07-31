@@ -2,6 +2,7 @@
   "name": "dentalcare",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://fares12358.github.io/BookingDentist/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
     "@fortawesome/free-solid-svg-icons": "^6.6.0",

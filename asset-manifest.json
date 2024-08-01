@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/BookingDentist/static/css/main.b8fe50f8.css",
-    "main.js": "/BookingDentist/static/js/main.6b99009e.js",
+    "main.css": "/BookingDentist/static/css/main.d41478bd.css",
+    "main.js": "/BookingDentist/static/js/main.7abd3b9e.js",
     "static/media/book.jpg": "/BookingDentist/static/media/book.12e2d1d46ad38b71a8f9.jpg",
     "static/media/main.jpg": "/BookingDentist/static/media/main.f504b1f2625213c8aa63.jpg",
     "static/media/Untitled (2).png": "/BookingDentist/static/media/Untitled (2).8821b40f8d3c2d55671e.png",
     "index.html": "/BookingDentist/index.html",
-    "main.b8fe50f8.css.map": "/BookingDentist/static/css/main.b8fe50f8.css.map",
-    "main.6b99009e.js.map": "/BookingDentist/static/js/main.6b99009e.js.map"
+    "main.d41478bd.css.map": "/BookingDentist/static/css/main.d41478bd.css.map",
+    "main.7abd3b9e.js.map": "/BookingDentist/static/js/main.7abd3b9e.js.map"
   },
   "entrypoints": [
-    "static/css/main.b8fe50f8.css",
-    "static/js/main.6b99009e.js"
+    "static/css/main.d41478bd.css",
+    "static/js/main.7abd3b9e.js"
   ]
 }

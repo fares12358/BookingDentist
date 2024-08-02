@@ -4,7 +4,7 @@ const DashSetting = () => {
   return (
     <>
       <h1 className="text-lg py-5 font-bold">Settings</h1>
-      <section className="flex flex-col my-5">
+      <section className="  flex flex-col my-5">
         <div className="w-full h-[1px] bg-zinc-700"></div>
 
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between my-10">
@@ -76,16 +76,16 @@ const DashSetting = () => {
               This is for custom you website language
             </span>
           </div>
-          <div className="mt-5 md:mt-0 flex">
-            <label className="container p-5">
+          <div className=" setting mt-5 md:mt-0 flex">
+            <label className="flex p-5">
               Arabic
               <input type="radio" name="language" />
               <div className="checkmark"></div>
             </label>
-            <label className="container p-5">
+            <label className="flex p-5">
               English
               <input type="radio" name="language" checked />
-              <div className="checkmark"></div>
+              <div className="checkmark "></div>
             </label>
           </div>
         </div>

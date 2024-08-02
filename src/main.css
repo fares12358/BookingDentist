@@ -36,10 +36,7 @@
   border: none;
 }
 
-/* cheeck box in setting langiage dashboard page */
-
-/* Hide the default checkbox */
-.container input {
+.setting input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -47,14 +44,10 @@
   width: 0;
 }
 
-.container {
-  display: flex;
-  gap: 10px;
-}
 
 
 /* Create a custom checkbox */
-.checkmark {
+.setting .checkmark {
   position: relative;
   box-shadow: rgb(255, 84, 0) 0px 0px 0px 2px;
   background-color: rgba(16, 16, 16, 0.5);
@@ -67,13 +60,13 @@
   cursor: pointer;
   transform-origin: 0px 10px;
   border-radius: 4px;
-  margin: -1px 10px 0px 0px;
+  margin: -1px 10px 0px 10px;
   padding: 0px;
   box-sizing: border-box;
   font-size: 20px;
 }
 
-.container input:checked ~ .checkmark {
+.setting input:checked ~ .checkmark {
   box-shadow: rgb(255, 84, 0) 0px 0px 0px 2px;
   background-color: rgba(245, 24, 24, 0.5);
   height: 20px;
@@ -85,24 +78,24 @@
   cursor: pointer;
   transform-origin: 0px 10px;
   border-radius: 4px;
-  margin: -1px 10px 0px 0px;
+  margin: -1px 10px 0px 10px;
   padding: 0px;
   box-sizing: border-box;
 
 }
 
-.checkmark:after {
+.setting .checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
 
-.container input:checked ~ .checkmark:after {
+.setting input:checked ~ .checkmark:after {
   display: block;
 }
 
 /* Style the checkmark/indicator */
-.container .checkmark:after {
+.setting .checkmark:after {
   left: 0.45em;
   top: 0.25em;
   width: 0.25em;

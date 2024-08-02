@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import Bookinglist from "./Bookinglist";
 const Dashhome = () => {
   // use context fro view
 
   return (
     <>
-    
       <h1 className="text-xl">Good afternoon, Erica</h1>
 
       <section className="py-10">

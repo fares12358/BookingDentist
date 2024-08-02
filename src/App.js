@@ -7,22 +7,25 @@ import Contact from "./pages/Contact";
 import Services from "./pages/Services";
 import Sign from "./pages/Sign";
 import "../src/main.css";
+import { AuthProvider } from "./components/AuthContext";
 
 function App() {
   return (
     <>
-      <Router basename={process.env.PUBLIC_URL}>
-        <div className="App">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/sign" element={<Sign />} />
-          </Routes>
-        </div>
-      </Router>
+      <AuthProvider>
+        <Router basename={process.env.PUBLIC_URL}>
+          <div className="App">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/dashboard" element={<Dashboard />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/services" element={<Services />} />
+              <Route path="/sign" element={<Sign />} />
+            </Routes>
+          </div>
+        </Router>
+      </AuthProvider>
     </>
   );
 }

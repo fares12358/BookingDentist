@@ -6,15 +6,23 @@ import {
   faPenToSquare,
   faCalendarDays,
 } from "@fortawesome/free-solid-svg-icons";
-const Viewbook = () => {
+import { useAuth } from "./AuthContext";
+import Bookinglist from "./Bookinglist";
+const Viewbook = (props) => {
+  const { setdahpage } = useAuth();
+  
+  const id =props.id;
   return (
     <>
       <section className="w-full py-5">
-        <button className="text-neutral-500">
+        <button className="text-neutral-500"
+          onClick={() => {
+            setdahpage(<Bookinglist />);
+          }}>
           <span className="px-3 text-white">
             <FontAwesomeIcon icon={faCaretLeft} />
           </span>
-          booking
+          booking{id}
         </button>
 
         <h1 className="py-10 text-md md:text-xl font-bold">

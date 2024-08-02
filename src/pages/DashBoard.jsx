@@ -14,11 +14,15 @@ import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { Link, useNavigate } from "react-router-dom";
 import Dashhome from "../components/Dashhome";
 import Bookinglist from "../components/Bookinglist";
+import DashSetting from "../components/DashSetting";
+import { useAuth } from "../components/AuthContext";
 const DashBoard = () => {
   // use context fro view
 
   const [show, setShow] = useState(false);
-  const [dahpage, setdahpage] = useState(<Dashhome />);
+  const { dahpage } = useAuth();
+  const { setdahpage } = useAuth();
+
 
   const view = () => {
     setShow(true);
@@ -132,7 +136,10 @@ const DashBoard = () => {
               </span>
               Order
             </div>
-            <div className="cursor-pointer p-4 hover:bg-[#18181b]  rounded-xl">
+            <div className="cursor-pointer p-4 hover:bg-[#18181b]  rounded-xl"
+            onClick={() => {
+              setdahpage(<DashSetting />);
+            }}>
               <span className="icon m-3">
                 <FontAwesomeIcon icon={faGear} />
               </span>
@@ -153,7 +160,7 @@ const DashBoard = () => {
               <span className="icon m-3">
                 <FontAwesomeIcon icon={faRightFromBracket} />
               </span>
-              back to site
+              back to website
             </div>
           </section>
         </section>

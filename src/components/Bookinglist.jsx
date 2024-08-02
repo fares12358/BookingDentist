@@ -1,8 +1,6 @@
 import React from "react";
 import Holderbook from "./Holderbook";
-
 const Bookinglist = () => {
-
   return (
     <>
       <section className="w-full overflow-auto">
@@ -33,18 +31,10 @@ const Bookinglist = () => {
           </div>
 
           <div className="w-full h-[1px] bg-zinc-700"></div>
-
-          <Holderbook />
-          <Holderbook />
-          <Holderbook />
-          <Holderbook />
-          <Holderbook />
-          <Holderbook />
-          <Holderbook />
-          <Holderbook />
-          <Holderbook />
-          <Holderbook />
-          <Holderbook />
+          {/* id from maping api */}
+          <Holderbook id="100" />
+          <Holderbook id="40" />
+          <Holderbook id="20" />
         </div>
       </section>
     </>

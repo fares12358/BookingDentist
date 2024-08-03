@@ -4,11 +4,12 @@ import Dashhome from './Dashhome';
 const AuthContext = createContext();
 export const AuthProvider = ({ children }) => {
   const [dahpage, setdahpage] = useState(<Dashhome />);
+  const [dashsing, setdashsign] = useState(false);
 
 
 
   return (
-    <AuthContext.Provider value={{dahpage,setdahpage}}>
+    <AuthContext.Provider value={{dahpage,setdahpage,dashsing, setdashsign}}>
       {children}
     </AuthContext.Provider>
   );

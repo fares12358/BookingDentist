@@ -1,28 +1,27 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.pricing .active{
+.pricing .active {
   background: #fff;
 }
 
-.pricing .active div{
+.pricing .active div {
   color: #000;
 }
 
-.pricing .active p{
+.pricing .active p {
   color: #03ecc9;
   text-shadow: 1px 1px 2px black;
 }
 
-.pricing .active button{
+.pricing .active button {
   background: #000;
   color: #fff;
 }
 
-
-.plane div{
+.plane div {
   padding: 25px 40px;
   color: #fff;
   width: 100%;
@@ -32,7 +31,7 @@
   text-align: center;
   background: transparent;
 }
-.plane .first{
+.plane .first {
   border: none;
 }
 
@@ -43,8 +42,6 @@
   height: 0;
   width: 0;
 }
-
-
 
 /* Create a custom checkbox */
 .setting .checkmark {
@@ -81,7 +78,6 @@
   margin: -1px 10px 0px 10px;
   padding: 0px;
   box-sizing: border-box;
-
 }
 
 .setting .checkmark:after {
@@ -104,4 +100,24 @@
   border-width: 0 0.15em 0.15em 0;
   transform: rotate(45deg);
   transition: all 500ms ease-in-out;
+}
+
+@media (min-width: 800px) {
+  /* Customize the scrollbar track */
+  ::-webkit-scrollbar {
+    width: 15px; /* Width of the scrollbar */
+  }
+
+  /* Customize the scrollbar thumb */
+  ::-webkit-scrollbar-thumb {
+    background-color: #18181b; /* Color of the thumb */
+    border-radius: 10px; /* Round corners */
+    border: 1px solid #262626;
+  }
+
+  /* Customize the scrollbar track */
+  ::-webkit-scrollbar-track {
+    background:transparent; /* Color of the track */
+    border-radius: 10px; /* Round corners */
+  }
 }

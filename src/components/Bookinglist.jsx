@@ -12,10 +12,10 @@ const Bookinglist = () => {
             placeholder="search order"
           />
           <div className="filter my-5 ">
-            <button className="bg-transparent border font-bold uppercase text-white focus:bg-white focus:text-black md:px-5 px-2 md:py-2 py-1 md:ml-5 rounded-md md:rounded-lg text-sm md:text-base ">
+            <button className="bg-transparent border font-bold uppercase text-white focus:bg-white focus:text-black px-4 py-1 md:ml-5 rounded-md md:rounded-lg text-sm ">
               by code
             </button>
-            <button className="bg-transparent border font-bold uppercase text-white focus:bg-white focus:text-black md:px-5 px-2 md:py-2 py-1 ml-5 rounded-md md:rounded-lg text-sm md:text-base">
+            <button className="bg-transparent border font-bold uppercase text-white focus:bg-white focus:text-black px-4 py-1 ml-5 rounded-md md:rounded-lg text-sm">
               by name
             </button>
           </div>

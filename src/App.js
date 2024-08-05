@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <AuthProvider>
-        <Router basename={process.env.PUBLIC_URL}>
+        <Router>
           <div className="App">
             <Routes>
               <Route path="/" element={<Home />} />
@@ -31,3 +31,13 @@ function App() {
 }
 
 export default App;
+
+
+
+
+
+// "gh-pages": "^6.1.1",
+
+
+// "homepage": "https://fares12358.github.io/BookingDentist/",
+

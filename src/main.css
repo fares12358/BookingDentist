@@ -121,3 +121,8 @@
     border-radius: 10px; /* Round corners */
   }
 }
+
+/* 
+.comment::-webkit-scrollbar{
+  display:none;
+} */

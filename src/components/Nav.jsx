@@ -9,31 +9,35 @@ import {
   MenuItems,
 } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { useAuth } from "./AuthContext";
+
 const Nav = () => {
+  const { isloged } = useAuth();
+  const { setloged } = useAuth();
+  const { admin } = useAuth();
+  const { setdmin } = useAuth();
   function classNames(...classes) {
     return classes.filter(Boolean).join(" ");
   }
   const navigation = [
     { name: "Home", href: "/", current: true },
-    { name: "Dashboard", href: "/DashBoard", current: false },
+    ...(admin
+      ? [{ name: "Dashboard", href: "/DashBoard", current: false }]
+      : []),
     { name: "About", href: "/About", current: false },
     { name: "Services", href: "/Services", current: false },
     { name: "Contact", href: "/Contact", current: false },
   ];
 
   //view and hide profile and sign in
-  const [isloged, setloged] = useState(false);
-
-  const sign = () => {
-    setloged(true);
-  };
 
   const logOut = () => {
     setloged(false);
+    setdmin(false);
   };
 
   return (
@@ -136,7 +140,6 @@ const Nav = () => {
             // ////////////////////////////////////////////////////////////////////////////////////////////
             <Link
               className="absolute right-0 md:static bg-cyan-800 md:text-lg text-sm px-3 py-2 rounded-lg font-bold text-white uppercase  "
-              onClick={sign}
               to="/Sign"
             >
               sign up
@@ -169,12 +172,3 @@ const Nav = () => {
   );
 };
 export default Nav;
-
-// const [userMood,setUserMood]=useState(false);
-
-// const navigation = [
-//   { name: "Home", href: "/", current: true },
-//   ...(userMood ? [{ name: "Dashboard", href: "/DashBoard", current: false }] : []),
-//   { name: "About", href: "/About", current: false },
-//   { name: "Contact", href: "/Contact", current: false },
-// ];

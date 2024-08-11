@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "id": "9172",
+      "name": "fares",
+      "email": "fm883254@gmail.com",
+      "username": "fares",
+      "password": "123456",
+      "role": true
+    },
+    {
+      "id": "d049",
+      "name": "ahmed",
+      "email": "fm883254@gmail.com",
+      "username": "faresfaf",
+      "password": "123456",
+      "role": false
+    },
+    {
+      "id": "e987",
+      "name": "fares",
+      "email": "fm883254@gmail.com",
+      "username": "fffffff",
+      "password": "54545454545F",
+      "role": false
+    },
+    {
+      "id": "b2de",
+      "name": "a7a",
+      "msg": "faresssdasdaeasc",
+      "rating": 2
+    }
+  ],
+  "booking": [],
+  "comments": [
+    {
+      "name": "fares",
+      "msg": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id modi fuga soluta possimus officiis ipsam maiores, totam ab dolore? ",
+      "rating": 5
+    },
+    {
+      "name": "mohamed",
+      "msg": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id modi fuga soluta possimus officiis ipsam maiores, totam ab dolore? ",
+      "rating": 2
+    },
+    {
+      "name": "mona",
+      "msg": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id modi fuga soluta possimus officiis ipsam maiores, totam ab dolore? ",
+      "rating": 3
+    }
+  ]
+}

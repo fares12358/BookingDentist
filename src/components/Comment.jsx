@@ -1,12 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 
 const Comment = (props) => {
-  const [rating, setRating] = useState(0);
-  const totalStars = 5;
-
-  const handleClick = (index) => {
-    setRating(index);
-  };
+  const totalStars = props.rating;
 
   return (
     <>
@@ -16,17 +11,13 @@ const Comment = (props) => {
             <div className="min-w-0 ml-3 mr-auto">
               {/* props.name */}
               <p className="text-base font-semibold text-cyan-500">
-                Darrell Steward
+                {props.name}
               </p>
             </div>
           </div>
           {/* props.msg */}
           <blockquote className="mt-5">
-            <p className="text-base text-gray-100">
-              You made it so simple. My new site is so much faster and easier to
-              work with than my old site. I just choose the page, make the
-              change and click save.
-            </p>
+            <p className="text-base text-gray-100">{props.msg}</p>
           </blockquote>
         </div>
         {/* props.rating */}
@@ -34,10 +25,8 @@ const Comment = (props) => {
           {Array.from({ length: totalStars }, (_, index) => (
             <span
               key={index}
-              className={`text-2xl cursor-pointer transition-colors ${
-                index < rating ? "text-yellow-400" : "text-gray-400"
-              }`}
-              onClick={() => handleClick(index + 1)}
+              className="text-2xl cursor-pointer transition-colors text-yellow-400
+              "
             >
               ★
             </span>

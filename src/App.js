@@ -6,6 +6,7 @@ import Dashboard from "./pages/DashBoard";
 import Contact from "./pages/Contact";
 import Services from "./pages/Services";
 import Sign from "./pages/Sign";
+import Account from "./pages/Account";
 import "../src/main.css";
 import { AuthProvider } from "./components/AuthContext";
 
@@ -22,6 +23,7 @@ function App() {
               <Route path="/contact" element={<Contact />} />
               <Route path="/services" element={<Services />} />
               <Route path="/sign" element={<Sign />} />
+              <Route path="/account" element={<Account />} />
             </Routes>
           </div>
         </Router>

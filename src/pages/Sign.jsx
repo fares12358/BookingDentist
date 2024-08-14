@@ -131,7 +131,7 @@ const Sign = () => {
 
     if (!haveAc) {
       try {
-        const response = await fetch("http://localhost:3001/users");
+        const response = await fetch("https://66bc6d0124da2de7ff6a72f4.mockapi.io/api/v1/users");
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
@@ -194,7 +194,7 @@ const Sign = () => {
   };
 
   function post(data) {
-    fetch("http://localhost:3001/users", {
+    fetch("https://66bc6d0124da2de7ff6a72f4.mockapi.io/api/v1/users", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -236,7 +236,7 @@ const Sign = () => {
         password.current.value !== ""
       ) {
         try {
-          const response = await fetch("http://localhost:3001/users");
+          const response = await fetch("https://66bc6d0124da2de7ff6a72f4.mockapi.io/api/v1/users");
           if (!response.ok) {
             throw new Error("Network response was not ok");
           }
@@ -321,7 +321,7 @@ const Sign = () => {
     const checkVaild = getPassValid();
     if (checkVaild) {
       try {
-        const response = await fetch("http://localhost:3001/users");
+        const response = await fetch("https://66bc6d0124da2de7ff6a72f4.mockapi.io/api/v1/users");
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }

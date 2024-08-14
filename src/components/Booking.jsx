@@ -16,7 +16,7 @@ const Booking = () => {
   const setcode = (e) => {
     e.preventDefault();
     if (isloged) {
-      setFoucsCode(user.id);
+      setFoucsCode(user.code);
     } else {
       setIsSend("login to enable booking");
     }
@@ -169,7 +169,7 @@ const Booking = () => {
   const { setConfirmed } = useAuth();
 
   function post(data) {
-    fetch("http://localhost:3001/booking", {
+    fetch("https://66bc6d0124da2de7ff6a72f4.mockapi.io/api/v1/booking", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -11,6 +11,7 @@ export const AuthProvider = ({ children }) => {
   const [data, setData] = useState([]);
   const [confirmed, setConfirmed] = useState(false);
   const [Vconfirm, setVconfirm] = useState(false);
+  const [dataForBooking, setDataForBooking] = useState([]);
 
   return (
     <AuthContext.Provider
@@ -29,7 +30,10 @@ export const AuthProvider = ({ children }) => {
         setData,
         confirmed,
         setConfirmed,
-        Vconfirm, setVconfirm,
+        Vconfirm,
+        setVconfirm,
+        dataForBooking,
+        setDataForBooking,
       }}
     >
       {children}
